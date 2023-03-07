@@ -6,16 +6,32 @@
 //
 
 import SwiftUI
+import FirebaseService
 
 struct ContentView: View {
+    
+    @EnvironmentObject private var authenticator: FirebaseAuthenticator<Profile>
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, \(authenticator.profile?.firstName ?? "there")!")
+            
+            Button("Log out") {
+                logout()
+            }
         }
         .padding()
+    }
+    
+    func logout() {
+        do {
+            try authenticator.signOut()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 

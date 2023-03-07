@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseService
+import FirebaseCore
 
 @main
 struct FirebaseServiceDemoApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirebaseAuthenticatorView<MainView, Profile>(Path.Firestore.profiles) {
+                MainView()
+            }
         }
     }
 }

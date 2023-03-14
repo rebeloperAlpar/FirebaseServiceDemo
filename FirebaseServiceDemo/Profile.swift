@@ -18,15 +18,18 @@ struct Profile: Codable, Identifiable, Firestorable, Nameable, Hashable {
     @DefaultEmptyString var firstName: String
     @DefaultEmptyString var middleName: String
     @DefaultEmptyString var lastName: String
+    @DefaultEmptyString var profilePictureUrl: String
     
     init(uid: String? = nil,
          firstName: String? = nil,
          middleName: String? = nil,
-         lastName: String? = nil) {
+         lastName: String? = nil,
+         profilePictureUrl: String? = nil) {
         self.uid = uid ?? ""
         self.firstName = firstName ?? ""
         self.middleName = middleName ?? ""
         self.lastName = lastName ?? ""
+        self.profilePictureUrl = profilePictureUrl ?? ""
     }
     
 }

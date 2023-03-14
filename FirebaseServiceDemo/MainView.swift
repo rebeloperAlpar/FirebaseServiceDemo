@@ -18,7 +18,9 @@ struct MainView: View {
             case .undefined:
                 ProgressView()
             case .authenticated:
-                ContentView()
+                NavigationStack {
+                    ContentView()
+                }
             case .notAuthenticated:
                 AuthView()
             }

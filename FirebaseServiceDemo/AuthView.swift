@@ -18,7 +18,7 @@ struct AuthView: View {
     
     @State private var isLogin = true
     
-    @State private var isSignInWithApple = true
+    @State private var isSignInWithApple = false
     
     var body: some View {
         VStack {

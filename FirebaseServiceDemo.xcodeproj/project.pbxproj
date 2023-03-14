@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9149F9429C0C5BC005AE841 /* FirebaseServiceDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseServiceDemo.entitlements; sourceTree = "<group>"; };
 		C924AC7D29B78AD400D92F36 /* FirebaseServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C924AC8029B78AD400D92F36 /* FirebaseServiceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseServiceDemoApp.swift; sourceTree = "<group>"; };
 		C924AC8229B78AD400D92F36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		C924AC7F29B78AD400D92F36 /* FirebaseServiceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9149F9429C0C5BC005AE841 /* FirebaseServiceDemo.entitlements */,
 				C924AC9929B790A800D92F36 /* Info.plist */,
 				C924AC8029B78AD400D92F36 /* FirebaseServiceDemoApp.swift */,
 				C924AC9729B78FB900D92F36 /* Path.swift */,
@@ -294,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseServiceDemo/FirebaseServiceDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseServiceDemo/Preview Content\"";
@@ -323,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseServiceDemo/FirebaseServiceDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseServiceDemo/Preview Content\"";

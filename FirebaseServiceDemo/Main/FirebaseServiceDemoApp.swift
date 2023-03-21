@@ -16,11 +16,14 @@ struct FirebaseServiceDemoApp: App {
         FirebaseApp.configure()
     }
     
+    @StateObject private var appService = AppService()
+    
     var body: some Scene {
         WindowGroup {
             FirebaseAuthenticatorView<MainView, Profile>(Path.Firestore.profiles) {
                 MainView()
             }
+            .environmentObject(appService)
         }
     }
 }
